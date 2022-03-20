@@ -3,25 +3,15 @@ import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import './Menu.css'
 
-const Menu = () => {
+const Menu = (props) => {
+    const {strMealThumb} =props.foodItem;
     return (
         <div>
-            {/* food menu */}
-           <div className='nav-menu'>
-               <h1>Our Menu</h1>
-               <ul>
-                   <span>All</span>
-                   <span>Breakfast</span>
-                   <span>Lunch</span>
-                   <span>Shakes</span>
-               </ul>
-
-           </div>
            {/* card item */}
             <div className='menu-item'>
                 <div className='menu-wrapper'>      
                   <div className='card-img'>
-                  <img src='https://react-projects-5-menu.netlify.app/images/item-1.jpeg'/>
+                  <img src={strMealThumb}/>
                   </div>
                   <div className='card-body'>
                       <div>
