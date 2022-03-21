@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Menu from "./components/menu/Menu";
+import './app.css'
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
            </div>
 
            {/* data sent */}
-          <div>
+          <div className="food-wrapper">
             {foods.map(food => <Menu foodItem={food}> </Menu>)}
           
           </div>
